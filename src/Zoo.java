@@ -1,7 +1,7 @@
 import java.util.ArrayList;
+
 public class Zoo {
 
-    
     public static void main(String[] args) {
 
         ArrayList<Animal> zooAnimals = new ArrayList<Animal>();
@@ -15,15 +15,15 @@ public class Zoo {
         zooAnimals.add(lizards);
         zooAnimals.add(bears);
         zooAnimals.add(otters);
-        zooAnimals.add(elephants);          
+        zooAnimals.add(elephants);
 
         ArrayList<Animal> woods = new ArrayList<Animal>();
 
         for (Animal animal : zooAnimals) {
-            System.out.println(animal.name);
-            System.out.println(animal.move());            
-            System.out.println(animal.getLocation());
-            System.out.println(animal.speak());
+            System.out.print("Animal: " + animal.name + ", ");
+            System.out.print("Move: " + animal.move() + ", ");
+            System.out.print("Location: " + animal.getLocation() + ", ");
+            System.out.println("Says: " + animal.speak() + " ");
         }
 
         for (Animal animal : zooAnimals) {
